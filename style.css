@@ -72,6 +72,13 @@ footer {
   flex-shrink: 0;
 }
 
+.profile-pic figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+  font-style: italic;
+}
+
 .about-text {
   flex: 1;
   min-width: 0;
