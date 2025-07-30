@@ -110,10 +110,32 @@ footer {
 }
 
 .contact {
-  width: 600px; /* Match the about me width */
-  margin: 0 auto; /* Center like about me */
-  background: #fff; /* White background */
-  /* Add any other styles needed */
+  background: #fff;
+  width: 90vw;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+/* ...existing styles... */
+
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .about-photo {
+    width: 110px;
+    height: 110px;
+  }
+  .about-section,
+  .contact {
+    padding: 1.2rem 0.5rem;
+    width: 100%;
+  }
+}
 
 /* Responsive: stack on mobile */
 @media (max-width: 700px) {
