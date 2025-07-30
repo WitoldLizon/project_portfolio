@@ -109,6 +109,12 @@ footer {
   min-width: 0;
 }
 
+.contact {
+  width: 600px; /* Match the about me width */
+  margin: 0 auto; /* Center like about me */
+  background: #fff; /* White background */
+  /* Add any other styles needed */
+
 /* Responsive: stack on mobile */
 @media (max-width: 700px) {
   .about-container {
