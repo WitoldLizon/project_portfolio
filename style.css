@@ -118,24 +118,43 @@ footer {
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
 }
 
-/* ...existing styles... */
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.contact-photo,
+.contact-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #e9f5ee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  flex-shrink: 0;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 0;
+}
 
 @media (max-width: 700px) {
-  .about-container {
+  .contact-container {
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
   }
-  .about-photo {
-    width: 110px;
-    height: 110px;
+  .contact-photo,
+  .contact-icon img {
+    width: 40px;
+    height: 40px;
   }
-  .about-section,
   .contact {
     padding: 1.2rem 0.5rem;
     width: 100%;
   }
-}
 
 /* Responsive: stack on mobile */
 @media (max-width: 700px) {
